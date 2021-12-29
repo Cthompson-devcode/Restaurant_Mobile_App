@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.donnasdiner">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DonnasDiner">
+        <activity android:name=".userDinnerActivity"
+
+            android:parentActivityName=".userMenuSelectionActivity"
+
+    />
+        <activity android:name=".userLunchActivity"
+            android:parentActivityName=".userMenuSelectionActivity"
+
+            />
+        <activity
+            android:name=".searchActivity"
+            android:parentActivityName=".breakfastListActivity" />
+        <activity
+            android:name=".viewOrderDetailsActivity"
+            android:parentActivityName=".addtoCartActivity" />
+        <activity
+            android:name=".noteOrderList"
+            android:parentActivityName=".addtoCartActivity" />
+        <activity android:name=".addEditOrderNote" />
+        <activity
+            android:name=".checkoutActivity"
+            android:parentActivityName=".addtoCartActivity" />
+        <activity
+            android:name=".addtoCartActivity"
+            android:parentActivityName=".userBreakfastList" />
+        <activity
+            android:name=".userViewBreakfastItemActivity"
+            android:parentActivityName=".userBreakfastList" />
+        <activity
+            android:name=".userBreakfastList"
+            android:parentActivityName=".userMenuSelectionActivity" />
+        <activity android:name=".userMenuSelectionActivity" />
+        <activity
+            android:name=".ownerLoginActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ownerMainScreenActivity"
+            android:parentActivityName=".ownerLoginActivity" />
+        <activity
+            android:name=".userMainScreen"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".addEditDinner"
+            android:parentActivityName=".dinnerListActivity" />
+        <activity
+            android:name=".dinnerListActivity"
+            android:parentActivityName=".ownerMainScreenActivity" />
+        <activity
+            android:name=".addEditLunch"
+            android:parentActivityName=".lunchListActivity" />
+        <activity
+            android:name=".lunchListActivity"
+            android:parentActivityName=".ownerMainScreenActivity" />
+        <activity
+            android:name=".addEditBreakfast"
+            android:parentActivityName=".breakfastListActivity" />
+        <activity
+            android:name=".breakfastListActivity"
+            android:parentActivityName=".ownerMainScreenActivity" />
+        <activity android:name=".ViewModel.homepage" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
